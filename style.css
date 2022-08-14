@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Start */
+
+html,body{
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    background-color: rgb(65, 67, 68);
+    overflow-x: hidden;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    word-wrap: break-word;
+    margin: 20px 0;
+    font-size: 2.4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+}
+
+.passwordBox{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    background-color: rgb(56, 59, 59);
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 30em;
+    /* grid-template-rows: 10em; */
+    /* background-color: aqua; */
+    column-gap: 10px;
+    text-align: center;
+}
+
+.passwordBox a{
+    background-color: rgb(53, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.passwordBox a:hover{
+    background-color: rgb(12, 19, 19);
+}
+
+.passwordBox a h2{
+    color: rgb(242, 242, 242);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width : 710px){
+    .passwordBox {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,8em);
+        row-gap: 10px;
+    }
+
+    .passwordBox a h2{
+        word-wrap: break-word;
+    }
+}
+
+.password-8n , .password-12n , .password-12an{
+    width: 100%;
+    max-width: 1400px;
+    height: 100vh;
+    background-color: rgb(29, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-12n{
+    background-color: rgb(39, 33, 33);
+}
+
+.password-12an{
+    background-color: rgb(47, 29, 29);
+}
+
+.box-8n , .box-12n , .box-12an{
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+
+    padding-top: 10px;
+    
+}
+
+.box-8n h1 , .box-12n h1 , .box-12an h1{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.box-8n #get-8n , .box-12n #get-12n , .box-12an #get-12an{
+    color: aliceblue;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+.btns-8n , .btns-12n , .btns-12an{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    height: 80px;
+    flex-wrap: wrap;
+}
+
+.btns-8n button , .btns-12n button , .btns-12an button{
+    padding: 5px 15px;
+    background-color: rgb(66, 58, 58);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid inherit;
+    margin-top: 10px;
+}
+
+.box-8n p , .box-12n p , .box-12an p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    visibility: hidden;
+}

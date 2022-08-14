@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="Favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password's Adda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Password's Adda</h1>
+    <div class="passwordBox">
+        <a href="#8-num"><h2>Numeric : 8</h2></a>
+        <a href="#12-num"><h2>Numeric : 12</h2></a>
+        <a href="#12-alnum"><h2>AlphaNumeric : 12</h2></a>
+    </div>
+    <section id="8-num" class="password-8n">
+        <div class="box-8n">
+            <h1>8 - Lenght Numeric Password</h1>
+            <h2 id="get-8n">********</h2>
+            <div class="btns-8n">
+                <button type="button" id="btn-8n" onclick="generate_password('num-8')">Password</button>
+                <button type="button" id="copy-8n" onclick="copy('num-8')">Copy</button>
+            </div>
+            <p id="path-8n">Copied to Clipboard</p>
+        </div>
+    </section>
+    <section id="12-num" class="password-12n">
+        <div class="box-12n">
+            <h1>12 - Lenght Numeric Password</h1>
+            <h2 id="get-12n">************</h2>
+            <div class="btns-12n">
+                <button type="button" id="btn-12n" onclick="generate_password('num-12')">Password</button>
+                <button type="button" id="copy-12n" onclick="copy('num-12')">Copy</button>
+            </div>
+            <p id="path-12n">Copied to Clipboard</p>
+        </div>
+    </section>
+    <section id="12-alnum" class="password-12an">
+        <div class="box-12an">
+            <h1>12 - Lenght Alpha Numeric Password</h1>
+            <h2 id="get-12an">************</h2>
+            <div class="btns-12an">
+                <button type="button" id="btn-12an" onclick="generate_password('alnum-12')">Password</button>
+                <button type="button" id="copy-12an" onclick="copy('alnum-12')">Copy</button>
+            </div>
+            <p id="path-12an">Copied to Clipboard</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
